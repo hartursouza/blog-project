@@ -1,5 +1,5 @@
 <footer>
-    test &copy;
+    Hartur &copy; 2024
 </footer>
 </body>
 
