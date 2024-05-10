@@ -71,21 +71,22 @@
             magni officiis sint vitae quasi rem culpa quidem eaque suscipit sapiente amet aliquid minus alias.
         </p>
     </div>
+    <aside id="nav-container">
+        <h3 id="tags-list">Tags</h3>
+        <ul id="tag-list">
+            <?php foreach ($currentPost['tags'] as $tag):?>
+            <li><a href="#"><?=$tag?></a></li>
+            <?php endforeach;?>
+        </ul>
+        <h3 id="categories-title">Categorias</h3>
+        <ul id="categories-list">
+            <?php foreach ($categories as $category):?>
+            <li><a href="#"><?=$category?></a></li>
+            <?php endforeach;?>
+        </ul>
+    </aside>
+
 </main>
-<aside id="nav-container">
-    <h3 id="tags-list">Tags</h3>
-    <ul id="tag-list">
-        <?php foreach ($currentPost['tags'] as $tag):?>
-        <li><a href="#"><?=$tag?></a></li>
-        <?php endforeach;?>
-    </ul>
-    <h3 id="categories-title">Categorias</h3>
-    <ul id="categories-list">
-        <?php foreach ($categories as $category):?>
-        <li><a href="#"><?=$category?></a></li>
-        <?php endforeach;?>
-    </ul>
-</aside>
 
 <?php 
     include_once("./templates/footer.php");
